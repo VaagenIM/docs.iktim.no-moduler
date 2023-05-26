@@ -1,0 +1,12 @@
+site/
+
+.obsidian/
+.vault-stats
+.trash/
+_cfg/
+_DATA/
+
+*.bib
+*.DS_Store
+.DS_Store
+.cache
