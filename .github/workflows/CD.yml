@@ -1,0 +1,16 @@
+name: CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Repository Dispatch
+      uses: peter-evans/repository-dispatch@v2.1.0
+      with:
+        token: ${{ secrets.DOCS_TOKEN }}
+        repository: VaagenIM/docs.iktim.no
+        event-type: doc_update
