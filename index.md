@@ -41,6 +41,7 @@ Planlagte / gjennomførte moduler for 2IT:
 Listen under er kun for å samle tanker på ett sted, referer til listen over for definerte moduler.
 
 - Modul: Avansert Python
+	- Jupyter Notebooks
 	- Docstrings
 	- Unittests
 - Modul: Programmering 2.0
