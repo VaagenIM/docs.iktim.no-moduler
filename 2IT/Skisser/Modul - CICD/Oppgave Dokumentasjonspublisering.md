@@ -10,7 +10,7 @@ tags:
   - mkdocs
   - readthedocs
 created: 2023-05-28 11:07:53
-updated: 2023-05-28 11:10:53
+updated: 2023-06-05 17:54:19
 ---
 # Oppgave: Dokumentasjonspublisering
 > [!IMPORTANT] Uferdig, TODO:

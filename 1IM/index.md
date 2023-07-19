@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2023-05-28 11:04:02
-updated: 2023-05-28 11:04:03
+updated: 2023-06-05 17:54:19
 ---
 # 1IM Moduler
 Planlagte / gjennomførte moduler:

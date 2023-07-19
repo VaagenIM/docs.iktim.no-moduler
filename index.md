@@ -6,7 +6,7 @@ lang: nb-NO
 authors:
   - Sondre Grønås
 created: 2023-05-26 21:22:34
-updated: 2023-05-28 11:04:32
+updated: 2023-06-05 17:54:19
 ---
 # Moduler
 Denne siden inneholder moduler for 1IM og 2IT, primært for IKT relaterte emner.
