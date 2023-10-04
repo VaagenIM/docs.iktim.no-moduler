@@ -13,29 +13,29 @@ created: 2023-10-04 20:26:56
 updated: 2023-10-04 20:27:02
 ---
 # Bonus: Flask til App
-Dette er en kort innføring i hvordan du kan gjøre ditt nettsted om til en installerbar applikasjon.
+Dette er en kort innføring i hvordan du kan gjøre ditt nettsted om til en installerbar applikasjon. Dette er ikke eksklusivt for Flask, og kan brukes til å forvandle alle web applikasjoner til installerbare apper.
 
-Denne siden går ikke inn på hvordan [service workers](https://web.dev/learn/pwa/service-workers/) fungerer i sin helhet, funksjonalitet som varslinger og 'bakgrunnskommunikasjon' dekkes ikke.
+Denne siden går ikke inn på hvordan [service workers](https://web.dev/learn/pwa/service-workers/) fungerer i sin helhet. Funksjonalitet som varslinger og 'bakgrunnskommunikasjon' dekkes ikke.
 
 ## Hva trenger du?
-Som mye i kode-verden, så spørs det hva du har behov for. Nedenfor er en liste over enkle ting du kommer til å trenge, men det er fullt mulig du vil trenge mer.
+Som mye i kode-verden, så spørs det egentlig hva du har behov for. Nedenfor er en liste over enkle ting du kommer til å trenge, men det er fullt mulig du vil trenge mer.
 
 - Et ikon i ulike formater: `512x512`, `192x192` + favicon `.ico` fil (`32x32` er standard), det er dog mulig å bruke vanlig `png`.
 - En `manifest.json` fil - navn er forsåvidt valgfritt
 - En `service_worker.js` fil - navn er forsåvidt valgfritt.
 
 ## Ikon
-Et ikon er viktig når man tenker en app - det er tross alt det brukeren ser og forbinder med applikasjonen. Det finnes en rekke standarder som er utviklet for at flest mulig skal kunne bruke appen, med tanke på bakoverkompatabilitet med eldre telefoner. Apple App store krever blant annet `1024x1024` oppløsning.
+Et ikon er viktig når man lager en app - det er tross alt det brukeren forbinder med applikasjonen. Det finnes en rekke standarder som er utviklet for at flest mulig skal kunne bruke appen, med tanke på bakoverkompatabilitet for eldre enheter, eller enheter med andre typer skjermer. Apple App store krever for eksempel ikon i `1024x1024` oppløsning.
 
 > [!NOTE]+ Ett ikon - flere format
-> Man må derfor ofte opprette flere varianter av et ikon (ja - dette kan gjøres via programmering), men i dette eksempelet forholder vi oss til litt færre alternativer.
+> Når vi tilpasser oss flere plattformer må man ofte opprette flere varianter av et ikon (ja - dette kan gjøres via kode). I dette eksempelet forholder vi oss til litt færre alternativer som bør være nok for de fleste moderne enheter.
 
 Ikonene bør være tilgjengelig i `static` mappen, med for eksempel følgende navngivning:
 
 - `/static/favicon.ico` (`32x32` størrelse, kan være `.png`)
 - `/static/icons/icon-512x512.png`
 - `/static/icons/icon-192x192.png`
-- Eventuelle ekstra størrelser.
+- Eventuelt ekstra ikoner i flere størrelser.
 
 > [!TECH]+ Android App Sizes Guidelines
 > ![[Android App Icon Sizes.png]] 
@@ -44,7 +44,7 @@ Ikonene bør være tilgjengelig i `static` mappen, med for eksempel følgende na
 ## manifest.json fil
 Manifest filen er metadata som er knyttet til appen i [[JSON]] format, og må også ligge tilgjengelig i `static` mappen. Filen bør se noenlunde slik ut:
 
-```json title="manifest.json"
+```json title="/static/manifest.json"
 {  
   "short_name": "App Navn",  
   "name": "App Navn",
@@ -77,7 +77,7 @@ Manifest filen er metadata som er knyttet til appen i [[JSON]] format, og må og
 ## service_worker.js fil
 Under er et enkelt eksempel av en `service_worker.js` fil - denne kan utvides til å gjøre mye forskjellig - i dette eksempelet brukes den kun til installasjon.
 
-```js title="service_worker.js"
+```js title="/static/service_worker.js"
 const cacheName = "App Navn";  
 const assets = ["/"];  // Eventuelle ekstra sider som "kan fungere offline", ikke nødvendig
 self.addEventListener("install", (installEvent) => {  
@@ -129,6 +129,7 @@ Dett var dett! Neste gang noen besøker siden din vil de få valget om å instal
 > Bubblewrap lar deg konvertere PWA (Progressiv Web App) til en fullverdig Android Applikasjon som kan publiseres til Google Play store.
 > 
 > PWABuilder fikser dette eventuelt for deg, og lar deg publisere til flere app-stores, inkluder Microsoft, Apple, Google & Meta.
+
 ## Referanser
 - https://developer.android.com/distribute/google-play/resources/icon-design-specifications
 - https://support.google.com/chrome/answer/9658361
