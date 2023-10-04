@@ -122,7 +122,7 @@ Dett var dett! Neste gang noen besøker siden din vil de få valget om å instal
  > 
  > Se: https://web.dev/customize-install/#in-app-flow
 
-> [!CODE]+ Se også - Bubblewrap / PWABuilder - Play store publisering
+> [!CODE]+ Se også - Bubblewrap / PWABuilder - App store publisering
 > - Link Google: https://developers.google.com/codelabs/pwa-in-play#0
 > - Link PWABuilder: https://www.pwabuilder.com/
 > 
