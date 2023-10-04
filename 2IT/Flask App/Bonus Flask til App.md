@@ -32,10 +32,10 @@ Et ikon er viktig når man tenker en app - det er tross alt det brukeren ser og 
 
 Ikonene bør være tilgjengelig i `static` mappen, med for eksempel følgende navngivning:
 
-- `/static/favicon.ico`
+- `/static/favicon.ico` (`32x32` størrelse, kan være `.png`)
 - `/static/icons/icon-512x512.png`
 - `/static/icons/icon-192x192.png`
-- + eventuelle ekstra størrelser.
+- Eventuelle ekstra størrelser.
 
 > [!TECH]+ Android App Sizes Guidelines
 > ![[Android App Icon Sizes.png]] 
