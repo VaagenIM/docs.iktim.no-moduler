@@ -113,8 +113,8 @@ Dett var dett! Neste gang noen besøker siden din vil de få valget om å instal
 > ![[Installer PWA Desktop.png]]
 
 > [!TECH]- Installasjonsknapp Android
-> > [!NOTE]+
-> > Obs: Det kan hende nettleseren spør bruker om å installere appen automatisk når brukeren besøker nettsiden, slik at de ikke må grave frem i menyen. Eventuelt kan en "Installer app" knapp opprettes.
+>> [!NOTE]+
+>> Obs: Det kan hende nettleseren spør bruker om å installere appen automatisk når brukeren besøker nettsiden, slik at de ikke må grave frem i menyen. Eventuelt kan en "Installer app" knapp opprettes.
 > ![[Installer PWA Android.png]]
 
 > [!TIP]+ Egen "Installer app" knapp
