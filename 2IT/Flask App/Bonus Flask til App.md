@@ -1,7 +1,7 @@
 ---
 title: "Bonus: Flask til App"
 aliases:
-  - Bonus App
+  - Flask til App
 lang: nb-NO
 authors:
   - Sondre Grønås
