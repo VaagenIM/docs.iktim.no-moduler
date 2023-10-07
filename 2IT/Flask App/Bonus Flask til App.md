@@ -48,7 +48,6 @@ Manifest filen er metadata som er knyttet til appen i [[JSON]] format, og må og
 {  
   "short_name": "App Navn",  
   "name": "App Navn",
-  "description": "Din beskrivelse her",
   "icons": [  
     {  
       "src": "/static/favicon.ico",  
@@ -69,8 +68,8 @@ Manifest filen er metadata som er knyttet til appen i [[JSON]] format, og må og
   "scope": "/",  
   "start_url": "/",  
   "display": "standalone",  
-  "theme_color": "transparent",  
-  "background_color": "transparent"  
+  "theme_color": "#1e2129",  
+  "background_color": "#1e2129"  
 }
 ```
 
